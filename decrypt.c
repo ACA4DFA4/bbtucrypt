@@ -97,7 +97,7 @@ static void get_track_name (char *buf, char *filename) {
 
 struct Decrypter {
     uint32_t key1buf[0x12];
-    uint32_t key2buf[0x1024];
+    uint32_t key2buf[1024];
 };
 
 static void decrypter_init (struct Decrypter *self, uint32_t *key1, uint32_t *key2) {
